@@ -9,7 +9,7 @@ There are quite a few tools in the Babel toolchain that try to make it easy for 
 
 ## Overview
 
-This guide will show you how to compile your JavaScript application code that uses ES2015+ syntax into code that works in current browsers. That will involve both transforming new syntax and polyfilling missing features.
+> This guide will show you how to compile your JavaScript application code that uses ES2015+ syntax into code that works in current browsers. That will involve both transforming new syntax and polyfilling missing features.
 
 The entire process to set this up involves:
 
@@ -77,7 +77,7 @@ Read on for a step-by-step explanation of how this works and an introduction to 
 
 ## Basic usage with CLI
 
-All the Babel modules you'll need are published as separate npm packages scoped under `@babel` (since version 7). This modular design allows for various tools each designed for a specific use case. Here we'll look at `@babel/core` and `@babel/cli`.
+''' All the Babel modules you'll need are published as separate npm packages scoped under `@babel` (since version 7). This modular design allows for various tools each designed for a specific use case. Here we'll look at `@babel/core` and `@babel/cli`.
 
 ### Core Library
 
@@ -105,6 +105,7 @@ As an end-user though, you'll probably want to install other tools that serve as
 npm install --save-dev @babel/core @babel/cli
 
 ./node_modules/.bin/babel src --out-dir lib
+Touch and hold a clip to pin it. Unpinned clips will be deleted after 1 hour.
 ```
 
 This will parse all the JavaScript files in the `src` directory, apply any transformations we have told it to, and output each file to the `lib` directory. Since we haven't told it to apply any transformations yet, the output code will be identical to the input (exact code styling is not preserved). We can specify what transformations we want by passing them as options.
