@@ -96,7 +96,7 @@ The three primary cases users could run into are:
 ### `filenameRelative`
 
 Type: `string`<br />
-Default: `path.relative(opts.cwd, opts.filename)` (if [`"filename"`](#filename) was passed)<br />
+### Default: `path.relative(opts.cwd, opts.filename)` (if [`"filename"`](#filename) was passed)<br />
 
 Used as the default value for Babel's `sourceFileName` option, and used
 as part of generation of filenames for the AMD / UMD / SystemJS module transforms.
@@ -120,7 +120,7 @@ Babel's default is to generate a string and a sourcemap, but in some
 contexts it can be useful to get the AST itself. The primary use case for this
 would be a chain of multiple transform passes, along the lines of
 
-```js title="JavaScript"
+'' js title="JavaScript"
 const filename = "example.js";
 const source = fs.readFileSync(filename, "utf8");
 
@@ -131,7 +131,7 @@ const { ast } = babel.transformSync(source, {
   code: false,
 });
 
-// Minify the file in a second pass and generate the output code here.
+### Minify the file in a second pass and generate the output code here.
 const { code, map } = babel.transformFromAstSync(ast, source, {
   filename,
   presets: ["minify"],
