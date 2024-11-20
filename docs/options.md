@@ -1,5 +1,5 @@
 ---
-title: Options
+```title: Options
 id: options
 sidebar_label: Config Options
 ---
