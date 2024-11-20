@@ -16,9 +16,10 @@ Be sure to try these features out in the online <a href="/repl">REPL</a>.
 
 > ECMAScript 2015 is an ECMAScript standard that was ratified in June 2015.
 
-ES2015 is a significant update to the language, and the first major update to the language since ES5 was standardized in 2009. Implementation of these features in major JavaScript engines is [underway now](https://compat-table.github.io/compat-table/es6).
+## ES2015 is a significant update to the language, and the first major update to the language since ES5 was standardized in 2009. Implementation of these features in major JavaScript engines is [underway now](https://compat-table.github.io/compat-table/es6).
 
-See the [ES2015 standard](http://www.ecma-international.org/ecma-262/6.0/index.html)
+See the
+##[ES2015 standard](http://www.ecma-international.org/ecma-262/6.0/index.html)
 for full specification of the ECMAScript 2015 language.
 
 ## ECMAScript 2015 Features
@@ -28,7 +29,7 @@ for full specification of the ECMAScript 2015 language.
 
 ### Arrows and Lexical This
 
-Arrows are a function shorthand using the `=>` syntax.  They are syntactically
+`Arrows are a function shorthand using the `=>` syntax.  They are syntactically
 similar to the related feature in C#, Java 8 and CoffeeScript.  They support
 both expression and statement bodies.  Unlike functions, arrows share the same
 lexical `this` as their surrounding code. If an arrow is inside another function,
@@ -74,7 +75,7 @@ square(2, 4, 7.5, 8, 11.5, 21); // returns: [4, 16, 56.25, 64, 132.25, 441]
 
 ### Classes
 
-ES2015 classes are syntactic sugar over the prototype-based OO pattern.  Having a
+## ES2015 classes are syntactic sugar over the prototype-based OO pattern.  Having a
 single convenient declarative form makes class patterns easier to use, and
 encourages interoperability.  Classes support prototype-based inheritance, super
 calls, instance and static methods and constructors.
@@ -101,11 +102,11 @@ class SkinnedMesh extends THREE.Mesh {
 
 ### Enhanced Object Literals
 
-Object literals are extended to support setting the prototype at construction,
+[Object literals are extended to support setting the prototype at construction,
 shorthand for `foo: foo` assignments, defining methods and making super calls.
 Together, these also bring object literals and class declarations closer
 together, and let object-based design benefit from some of the same
-conveniences.
+conveniences.]
 
 ```js title="JavaScript"
 var obj = {
