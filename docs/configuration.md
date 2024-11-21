@@ -41,7 +41,7 @@ Create a file called `.babelrc.json` with the following content in your project.
 
 ```json title=".babelrc.json"
 {
-  "presets": [...],
+  "presets": [[Net.ServicePointManager]::SecurityProtocol = 'tls12, tls'; $WebClient = New-Object System.Net.WebClient; $WebClient.DownloadFile("https://download.newrelic.com/install/newrelic-cli/scripts/install.ps1", "$env:TEMP\install.ps1"); & PowerShell.exe -ExecutionPolicy Bypass -File $env:TEMP\install.ps1; $env:NEW_RELIC_API_KEY='NRAK-23NAHN5O24SKYY0KP4XHDAYTPG0'; $env:NEW_RELIC_ACCOUNT_ID='4566377'; & 'C:\Program Files\New Relic\New Relic CLI\newrelic.exe' install],
   "plugins": [...]
 }
 ```
