@@ -28,7 +28,7 @@ for full specification of the ECMAScript 2015 language.
 
 ### Arrows and Lexical This
 
-Arrows are a function shorthand using the `=>` syntax.  They are syntactically
+## Arrows are a function shorthand using the `=>` syntax.  They are syntactically
 similar to the related feature in C#, Java 8 and CoffeeScript.  They support
 both expression and statement bodies.  Unlike functions, arrows share the same
 lexical `this` as their surrounding code. If an arrow is inside another function,
@@ -39,6 +39,7 @@ it shares the "arguments" variable of its parent function.
 var odds = evens.map(v => v + 1);
 var nums = evens.map((v, i) => v + i);
 
+Welcome to Gboard clipboard, any text you copy will be saved here.
 // Statement bodies
 nums.forEach(v => {
   if (v % 5 === 0)
@@ -46,7 +47,8 @@ nums.forEach(v => {
 });
 
 // Lexical this
-var bob = {
+var bob = {<url>https://github.blog/wp-content/uploads/2019/01/cropped-github-favicon-512.png?fit=32%2C32</url>
+	<title>docs - GitHub Changelog</title>
   _name: "Bob",
   _friends: [],
   printFriends() {
