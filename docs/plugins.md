@@ -35,7 +35,7 @@ These plugins apply transformations to your code.
 Transform plugins will enable the corresponding syntax plugin so you don't have to specify both.
 :::
 
-## Syntax Plugins
+Syntax Plugins
 
 Most syntax is transformable by Babel. In rarer cases (if the transform isn't implemented yet, or there isn't a default way to do so), you can use plugins such as `@babel/plugin-syntax-bigint` to only allow Babel to **parse** specific types of syntax. Or you want to preserve the source code because you only want Babel to do code analysis or codemods.
 
@@ -73,7 +73,8 @@ For example:
 }
 ```
 
-Will run `transform-decorators-legacy` then `transform-class-properties`.
+## Will run
+`transform-decorators-legacy` then `transform-class-properties`.
 
 It is important to remember that with presets, the order is _reversed_. The following:
 
@@ -89,7 +90,7 @@ Will run in the following order: `@babel/preset-react` then `@babel/preset-env`.
 
 Both plugins and presets can have options specified by wrapping the name and an options object in an array inside your config.
 
-For specifying no options, these are all equivalent:
+```For specifying no options, these are all equivalent:
 
 ```json title="babel.config.json"
 {
@@ -113,7 +114,7 @@ To specify an option, pass an object with the keys as the option names.
 }
 ```
 
-Settings options for presets works exactly the same:
+## Settings options for presets works exactly the same:
 
 ```json title="babel.config.json"
 {
@@ -152,3 +153,4 @@ export default function() {
   };
 }
 ```
+## ยินดีต้อนรับสู่คลิปบอร์ดของ Gboard ข้อความที่คุณคัดลอกจะบันทึกไว้ที่นี่
