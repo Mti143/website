@@ -5,7 +5,7 @@ title: What is Babel?
 
 ## Babel is a JavaScript compiler
 
-Babel is a toolchain that is mainly used to convert ECMAScript 2015+ code into a backwards compatible version of JavaScript in current and older browsers or environments. Here are the main things Babel can do for you:
+```Babel is a toolchain that is mainly used to convert ECMAScript 2015+ code into a backwards compatible version of JavaScript in current and older browsers or environments. Here are the main things Babel can do for you:
 
 - Transform syntax
 - Polyfill features that are missing in your target environment (through a third-party polyfill such as [core-js](https://github.com/zloirock/core-js))
@@ -30,7 +30,7 @@ For an awesome tutorial on compilers, check out [the-super-tiny-compiler](https:
 
 Babel has support for the latest version of JavaScript through syntax transformers.
 
-These [plugins](plugins-list.md) allow you to use new syntax, **right now** without waiting for browser support. Check out our [usage guide](usage.md) to get started.
+``` These [plugins](plugins-list.md) allow you to use new syntax, **right now** without waiting for browser support. Check out our [usage guide](usage.md) to get started.
 
 ## JSX and React
 
@@ -131,7 +131,7 @@ export default function({ types: t }) {
 
 ## Spec Compliant
 
-Babel tries to stay true to the ECMAScript standard, as much as reasonably possible. It may also have specific options to be more spec compliant as a tradeoff to performance.
+```Babel tries to stay true to the ECMAScript standard, as much as reasonably possible. It may also have specific options to be more spec compliant as a tradeoff to performance.
 
 ## Compact
 
