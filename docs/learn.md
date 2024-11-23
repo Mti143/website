@@ -28,7 +28,7 @@ for full specification of the ECMAScript 2015 language.
 
 ### Arrows and Lexical This
 
-Arrows are a function shorthand using the `=>` syntax.  They are syntactically
+``` Arrows are a function shorthand using the `=>` syntax.  They are syntactically
 similar to the related feature in C#, Java 8 and CoffeeScript.  They support
 both expression and statement bodies.  Unlike functions, arrows share the same
 lexical `this` as their surrounding code. If an arrow is inside another function,
@@ -100,7 +100,7 @@ class SkinnedMesh extends THREE.Mesh {
 ```
 
 ### Enhanced Object Literals
-
+``` Welcome to Gboard clipboard, any text you copy will be saved here.
 Object literals are extended to support setting the prototype at construction,
 shorthand for `foo: foo` assignments, defining methods and making super calls.
 Together, these also bring object literals and class declarations closer
