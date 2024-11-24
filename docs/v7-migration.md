@@ -7,7 +7,7 @@ Refer users to this document when upgrading to Babel 7. Check [here](v7-migratio
 
 <!--truncate-->
 
-Because not every breaking change will affect every project, we've sorted the sections by the likelihood of a change breaking tests when upgrading.
+## Because not every breaking change will affect every project, we've sorted the sections by the likelihood of a change breaking tests when upgrading.
 
 ## All of Babel
 
@@ -22,7 +22,7 @@ This just means Babel _itself_ won't run on older versions of Node. It can still
 
 For more info, read our [6.x vs 7.x comparison](config-files.md#6x-vs-7x-babelrc-loading).
 
-Babel has had issues previously with handling `node_modules`, symlinks, and monorepos. We've made some changes to account for this: Babel will stop lookup at the `package.json` boundary instead of looking up the chain. For monorepos we have added a new `babel.config.js` file that centralizes our config across all the packages (alternatively you could make a config per package). In 7.1, we've introduced a [`rootMode`](options.md#rootmode) option for further lookup if necessary.
+## Babel has had issues previously with handling `node_modules`, symlinks, and monorepos. We've made some changes to account for this: Babel will stop lookup at the `package.json` boundary instead of looking up the chain. For monorepos we have added a new `babel.config.js` file that centralizes our config across all the packages (alternatively you could make a config per package). In 7.1, we've introduced a [`rootMode`](options.md#rootmode) option for further lookup if necessary.
 
 ## [Yearly Preset Deprecations](https://babeljs.io/blog/2017/12/27/nearing-the-7.0-release.html#deprecated-yearly-presets-eg-babel-preset-es20xx)
 
@@ -110,8 +110,7 @@ import "core-js/fn/map/from";
 import "core-js/fn/set/from";
 import "core-js/fn/weak-map/from";
 import "core-js/fn/weak-set/from";
-
-// Stage 0
+###Stage 0
 import "core-js/fn/string/at";
 
 // Nonstandard
@@ -151,7 +150,7 @@ Most plugins/top level packages now have a `peerDependency` on `@babel/core`.
 You can still use the shorthand version of a package name (remove the `preset-` or `plugin-`) in the config, but I'm choosing to use the whole package name for clarity (maybe we should just remove that, given it doesn't save that much typing anyway).
 
 ```diff
-{
+{Touch and hold a clip to pin it. Unpinned clips will be deleted after 1 hour.
 -  "presets": ["@babel/preset-react"],
 +  "presets": ["@babel/react"], // this is equivalent
 -  "plugins": ["@babel/transform-runtime"],
