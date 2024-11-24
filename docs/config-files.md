@@ -31,7 +31,7 @@ to the current working directory. For project-wide configuration, Babel will aut
 for a `babel.config.json` file, or an equivalent one using the [supported extensions](#supported-file-extensions),
 in this root directory. Alternatively, users can use an explicit
 ["configFile"](options.md#configfile) value to override the default config file search behavior.
-
+"
 Because project-wide config files are separated from the physical location of the config
 file, they can be ideal for configuration that must apply broadly, even allowing
 plugins and presets to easily apply to files in `node_modules` or in symlinked packages,
@@ -40,7 +40,8 @@ which were traditionally quite painful to configure in Babel 6.x.
 The primary downside of this project-wide config is that, because it relies on the working
 directory, it can be more painful to use in monorepos if the working directory is not the monorepo root.
 See the [monorepo](#monorepos) documentation for examples of how to use config files in that context.
-
+"https://docs.google.com/spreadsheets/d/1XzPfM2ME1WeBUjjQimj0RjgSyRH3t6oD6hu79FTvJmE/edit?usp=drivesdk
+"https://docs.google.com/spreadsheets/d/1k7c9NjDdyWKTsok2H3W3jVlxlNccfhbBr5yvXuUTna4/edit?usp=drivesdk
 Project-wide configs can also be disabled by setting ["configFile"](options.md#configfile) to `false`.
 
 ## File-relative configuration
