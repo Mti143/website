@@ -1,8 +1,8 @@
 /*global $ ace Babel*/
 /*eslint quotes: ["error", "double", { "avoidEscape": true }]*/
-import debounce from "lodash.debounce";
+"import debounce from "lodash.debounce";
 
-const miniReplExamples = [
+"const miniReplExamples = [
   "/(?i:a)b/",
   `using Flavortown = from(#["Guy Fieri"]);`,
   // use next(yourTurn) = throw "some code in here!"
@@ -10,21 +10,21 @@ const miniReplExamples = [
   `let yourTurn = throw "some code in here!"`,
 ];
 
-let inEditor;
-let outEditor;
+'let inEditor;
+'let outEditor;
 
-let runDemo = true;
+'let runDemo = true;
 
-const debouncedUpdate = debounce(function() {
+'const debouncedUpdate = debounce(function() {
   compileCode(inEditor, outEditor);
 }, 1000);
-
-function isMobile() {
-  return window.screen.width < 760;
+'
+'function isMobile() {
+ ' return window.screen.width < 760;
 }
 
-function setupEditor(id, readOnly) {
-  const editor = ace.edit(id);
+"function setupEditor(id, readOnly) {
+  "const editor = ace.edit(id);
 
   editor.setOptions({
     // editor
@@ -50,32 +50,32 @@ function setupEditor(id, readOnly) {
   editor.renderer.setScrollMargin(24, 24);
   editor.commands.removeCommands(["gotoline", "find"]);
 
-  return editor;
+  'return editor;
 }
 
-function simulateKeys(inEditor, outEditor, texts) {
-  let textIndex = 0;
-  let charIndex = 0;
-  let timeout;
+'function simulateKeys(inEditor, outEditor, texts) {
+ ' let textIndex = 0;
+ ' let charIndex = 0;
+  "let timeout;
 
-  function simulateKey(changingText) {
-    const delay = changingText ? 4000 : Math.round(Math.random() * 125) + 30;
+  "function simulateKey(changingText) {
+    "const delay = changingText ? 4000 : Math.round(Math.random() * 125) + 30;
 
-    timeout = setTimeout(function() {
-      if (!runDemo) {
-        if (timeout) {
+    "timeout = setTimeout(function() {
+      'if (!runDemo) {
+        'if (timeout) {
           clearTimeout(timeout);
         }
-        return;
+       " return;
       }
 
-      const text = texts[textIndex];
+      'const text = texts[textIndex];
 
       charIndex++;
 
       inEditor.setValue(text.substring(0, charIndex), 1);
 
-      if (charIndex < text.length) {
+     ' if (charIndex < text.length) {
         simulateKey();
       } else if (charIndex === text.length && textIndex < texts.length - 1) {
         textIndex++;
