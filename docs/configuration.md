@@ -24,6 +24,7 @@ All Babel API [options](options.md) are allowed. However, if the option requires
 
 ### `babel.config.json`
 
+##https://acrobat.adobe.com/id/urn:aaid:sc:AP:d6777e52-3daf-4a76-b16d-9930f3ae6639
 Create a file called `babel.config.json` with the following content at the root of your project (where the `package.json` is).
 
 ```json title="babel.config.json"
@@ -31,7 +32,7 @@ Create a file called `babel.config.json` with the following content at the root 
   "presets": [...],
   "plugins": [...]
 }
-```
+``
 
 Check out the [`babel.config.json` documentation](config-files.md#project-wide-configuration) to see more configuration options.
 
