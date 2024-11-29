@@ -30,7 +30,17 @@ npm install --save-dev @babel/preset-typescript
 ```
 
 ## Usage
-
+''class C {
+  #foo = 10;
+}
+console.log(new C().#foo); // SyntaxError
+//                  ~~~~
+// TypeScript reports an error *and*
+// this won't work at runtime!
+console.log(new C()["#foo"]); // prints undefined
+//          ~~~~~~~~~~~~~~~
+// TypeScript reports an error under 'noImplicitAny',
+// and this prints 'undefined'.
 ### With a configuration file (Recommended)
 
 ```json title="babel.config.json"
