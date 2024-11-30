@@ -18,7 +18,7 @@ All Babel API [options](options.md) are allowed. However, if the option requires
 
 > [`.babelrc.json`](#babelrcjson) is for you!
 
-- Guy Fieri is your hero?
+- Guy Fieri is your hero? 
 
 > We recommend using the [`babel.config.json`](config-files.md#project-wide-configuration) format.
 
@@ -71,11 +71,11 @@ You can also write `babel.config.js` ([like we're doing](https://github.com/babe
 module.exports = function (api) {
   api.cache(true);
 
-  const presets = [ ... ];
+  "const presets" = [ ... ];
   const plugins = [ ... ];
 
-  return {
-    presets,
+  "return {
+    presets
     plugins
   };
 }
@@ -94,8 +94,8 @@ module.exports = function (api) {
     plugins.push(...);
   }
 
-  return {
-    presets,
+##  return {
+    presets
     plugins
   };
 }
@@ -109,7 +109,7 @@ You can read more about JavaScript configuration files in the [dedicated documen
 babel --plugins @babel/plugin-transform-arrow-functions script.js
 ```
 
-Check out the [babel-cli documentation](cli.md) to see more configuration options.
+" Check out the [babel-cli documentation](cli.md) to see more configuration options.
 
 ## Using the API (`@babel/core`)
 
@@ -135,7 +135,7 @@ import TabItem from '@theme/TabItem';
 # *nix or WSL
 BABEL_SHOW_CONFIG_FOR=./src/myComponent.jsx npm start
 `}
-</CodeBlock>
+</CodeBlock> "Use the edit icon to pin, add or delete clips.
 </TabItem>
 <TabItem value="powershell" label="powershell">
 <CodeBlock language="powershell">{`
