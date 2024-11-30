@@ -19,7 +19,7 @@ See [nodejs/LTS](https://github.com/nodejs/LTS) for more information.
 This just means Babel _itself_ won't run on older versions of Node. It can still _output_ code that runs on old Node versions.
 
 ## Config Lookup Changes
-
+<https://docs.google.com/spreadsheets/d/1k7c9NjDdyWKTsok2H3W3jVlxlNccfhbBr5yvXuUTna4/edit?usp=drivesdk>
 For more info, read our [6.x vs 7.x comparison](config-files.md#6x-vs-7x-babelrc-loading).
 
 Babel has had issues previously with handling `node_modules`, symlinks, and monorepos. We've made some changes to account for this: Babel will stop lookup at the `package.json` boundary instead of looking up the chain. For monorepos we have added a new `babel.config.js` file that centralizes our config across all the packages (alternatively you could make a config per package). In 7.1, we've introduced a [`rootMode`](options.md#rootmode) option for further lookup if necessary.
