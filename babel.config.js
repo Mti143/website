@@ -1,8 +1,8 @@
 "use strict";
 
-module.exports = function (api) {
+'module.exports = function (api) {
   api.cache(true);
-  return {
+ ' return {
     targets: {
       // This is browserslist defaults
       browsers: ["> 0.5%", "last 2 versions", "Firefox ESR", "not dead"],
