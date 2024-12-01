@@ -1,4 +1,4 @@
----
+
 id: configuration
 title: Configure Babel
 ---
