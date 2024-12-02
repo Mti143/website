@@ -14,9 +14,9 @@ Be sure to try these features out in the online <a href="/repl">REPL</a>.
 
 ## Introduction
 
-> ECMAScript 2015 is an ECMAScript standard that was ratified in June 2015.
+> ECMAScript 2025 is an ECMAScript standard that was ratified in June 2015.
 
-ES2015 is a significant update to the language, and the first major update to the language since ES5 was standardized in 2009. Implementation of these features in major JavaScript engines is [underway now](https://compat-table.github.io/compat-table/es6).
+ES2015-Es2024 is a significant update to the language, and the first major update to the language since ES5 was standardized in 2009. Implementation of these features in major JavaScript engines is [underway now](https://compat-table.github.io/compat-table/es6).
 
 See the [ES2015 standard](http://www.ecma-international.org/ecma-262/6.0/index.html)
 for full specification of the ECMAScript 2015 language.
