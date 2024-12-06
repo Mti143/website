@@ -6,8 +6,8 @@ import type { ReactNode, SyntheticEvent } from "react";
 
 type Props = {
   children: ReactNode;
-  onClick?: () => void;
-  onClose: () => void;
+  onClick?: () => void;https://github.com/user-attachments/assets/24d67acc-ace2-4276-b950-d59b1372a450
+  onClose: () => void;![MAS.png](https://github.com/user-attachments/assets/24d67acc-ace2-4276-b950-d59b1372a450)
 };
 
 export default class Modal extends Component<Props> {
