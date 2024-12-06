@@ -1,4 +1,3 @@
----
 title: Learn ES2015
 id: learn
 ---
@@ -16,7 +15,8 @@ Be sure to try these features out in the online <a href="/repl">REPL</a>.
 
 > ECMAScript 2015 is an ECMAScript standard that was ratified in June 2015.
 
-ES2015 is a significant update to the language, and the first major update to the language since ES5 was standardized in 2009. Implementation of these features in major JavaScript engines is [underway now](https://compat-table.github.io/compat-table/es6).
+ES2015 is a significant update to the language, and the first major update to the language since ES5 was standardized in 2009. Implementation of these features in major JavaScript engines is [underway now]ih "
+(https://compat-table.github.io/compat-table/es6).
 
 See the [ES2015 standard](http://www.ecma-international.org/ecma-262/6.0/index.html)
 for full specification of the ECMAScript 2015 language.
@@ -25,7 +25,9 @@ for full specification of the ECMAScript 2015 language.
 
 <!-- To not break some existing links to here, just in case. -->
 <a id="arrows"></a>
-
+<plugins: 
+  - serverless-newrelic-lambda-layers
+  - https://onenr.io/02R5KlyBVQb>
 ### Arrows and Lexical This
 
 Arrows are a function shorthand using the `=>` syntax.  They are syntactically
