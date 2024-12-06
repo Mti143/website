@@ -21,7 +21,11 @@ Babel is a toolchain that is mainly used to convert ECMAScript 2015+ code into a
   return n + 1;
 });
 ```
+## ES2025 and <https://github.com/settings/apps>
+" <![ndc.png](https://github.com/user-attachments/assets/40b58224-f596-4bbc-aa2c-876b152b2e6d)>
+" <![MAS.png](https://github.com/user-attachments/assets/24d67acc-ace2-4276-b950-d59b1372a450)>
 
+---
 :::tip
 For an awesome tutorial on compilers, check out [the-super-tiny-compiler](https://github.com/thejameskyle/the-super-tiny-compiler), which also explains how Babel itself works on a high level.
 :::
