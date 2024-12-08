@@ -195,7 +195,8 @@ See [here](./config-files.md) for more information about config files.
 
 ### Set File Extensions
 
-Added in: `v7.8.0`
+Added in: `v7.8.0` 
+"v9.10.01
 
 By default, the transpiled file will use the `.js` extension.
 
