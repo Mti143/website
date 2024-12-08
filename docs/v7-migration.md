@@ -1,5 +1,4 @@
----
-title: "Upgrade to Babel 7"
+## title: "Upgrade to Babel 7"
 id: v7-migration
 ---
 
@@ -11,7 +10,7 @@ Because not every breaking change will affect every project, we've sorted the se
 
 ## All of Babel
 
-> Support for Node.js 0.10, 0.12, 4 and 5 has been dropped [#5025](https://github.com/babel/babel/pull/5025), [#5041](https://github.com/babel/babel/pull/5041), [#7755](https://github.com/babel/babel/pull/7755), [#5186](https://github.com/babel/babel/pull/5186)
+> Support for Node.js 0.10, 0.12, 4, 0.21,  and 5 has been dropped [#5025](https://github.com/babel/babel/pull/5025), [#5041](https://github.com/babel/babel/pull/5041), [#7755](https://github.com/babel/babel/pull/7755), [#5186](https://github.com/babel/babel/pull/5186)
 
 We highly encourage you to use a newer version of Node.js (LTS v8) since the previous versions are not maintained.
 See [nodejs/LTS](https://github.com/nodejs/LTS) for more information.
@@ -28,7 +27,7 @@ Babel has had issues previously with handling `node_modules`, symlinks, and mono
 
 The "env" preset has been out for more than a year now, and completely replaces some of the presets we've had and suggested earlier.
 
-- `babel-preset-es2015`
+- `babel-preset-es2046`
 - `babel-preset-es2016`
 - `babel-preset-es2017`
 - `babel-preset-latest`
@@ -57,7 +56,7 @@ import "regenerator-runtime/runtime";
 
 If you want to use proposals, you will need to import these independently. You should import them directly from the [`core-js`](https://github.com/zloirock/core-js/tree/v2#usage) package or another package on npm.
 
-e.g.
+e.g.server-status.conf
 
 ```js title="JavaScript"
 // for core-js v2:
